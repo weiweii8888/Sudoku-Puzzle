@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 50px); /* 9 columns */
+    grid-template-rows: repeat(9, 50px); /* 9 rows */
+    grid-gap: 1px;
+    border: 1px solid #000;
+}
+
+#sudoku-grid input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #fff; /* Default background color */
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Aligns items horizontally at the center */
+    gap: 10px; /* Optional: adds space between buttons */
+    margin-top: 20px;
+}
+
+#solution-txt {
+    color: red;
+}
+
+
+
